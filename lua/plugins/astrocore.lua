@@ -45,8 +45,8 @@ return {
         -- second key is the lefthand side of the map
 
         -- navigate buffer tabs
-        ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
-        ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+        ["<leader>sl"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
+        ["<leader>sh"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
@@ -80,10 +80,9 @@ return {
         ["<C-r>"] = { ":WinResizerStartResize<cr>" },
 
         -- split
-        ["<C-s>"] = { "<C-w>v", desc = "Split window vertically" },
-        -- ["<C-t>"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "Toggle vertical terminal" },
-
-        ["<leader>t"] = { "<cmd>ToggleTerm float<cr>", desc = "ToggleTerm float"},
+        ["<leader>ss"] = { "<C-w>v", desc = "Split window vertically" },
+        ["<leader>t"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "Toggle vertical terminal" },
+        -- ["<leader>t"] = { "<cmd>ToggleTerm float<cr>", desc = "ToggleTerm float"},
 
         -- vim-visual-multi
         ["<A-k>"] = { "<cmd>call vm#commands#add_cursor_up(0, v:count1)<cr>" },
