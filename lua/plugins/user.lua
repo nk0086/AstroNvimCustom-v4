@@ -5,6 +5,9 @@
 return {
 
   -- == Examples of Adding Plugins ==
+  {
+    "cocopon/iceberg.vim",
+  },
 
   "andweeb/presence.nvim",
   {
@@ -291,7 +294,8 @@ return {
           kt = { "markdown", "Avante" },
         },
       },
-    }},
+    }
+  },
 
   {
     "greggh/claude-code.nvim",
